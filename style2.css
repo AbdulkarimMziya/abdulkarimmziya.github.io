@@ -1,0 +1,181 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(banner.jpg);   
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat';
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+    margin: 2px auto;
+}
+
+.logo_container{
+    width: 50%;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.logo_container h1{
+    font-family: 'Rampart One';
+    color: #fff;
+}
+
+.logo_container h1 span{
+    background: linear-gradient(to right bottom, 
+			#1eb53a 38%, #fcd116 0, #fcd116 42%, #000 0, 
+			#000 58%, #fcd116 0, #fcd116 62%, #00a3dd 0);
+    padding: 4px;
+    border-radius: 20px;
+}
+
+nav{
+    width: 45%;
+    margin: 4px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+
+nav ul li{
+    font-size: 18px;
+    margin: 4px;
+    padding: 5px;
+    font-family: 'Montserrat';
+    color: #fff;
+    flex: 1px 1px 0;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu a:hover{
+    background-color: #444;
+    border-radius: 13px;
+}
+.menu a:nth-of-type(3){
+    background-color: #333;
+    border-radius: 13px;
+}
+
+/*---------------------------Web Form---------------------------*/
+section{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px
+}
+
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 20px #333;
+    border-radius: 8px;
+    margin-bottom: 20px     
+}
+
+.formRow{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.formRow label{
+    color: #fff;
+}
+.formRow input{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128,128,128,0.199);
+    margin-top: 5px;    
+}
+
+button[type="submit"]{
+    width: 100%;
+    border: 1px solid #333;
+    outline: none;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 8px;
+    font-family: 'Bebas Neue';
+    color: #fff;
+    background-color: transparent;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .3s ease background-color;
+}
+
+button[type="submit"]:hover{
+    background-color: #407294;
+}
+
+/*____________________________Footer_____________________________*/
+
+footer{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+}
+
+.social-links{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-links a:hover{
+    cursor: pointer;
+}
+
+.social-links a{
+    width: 50px;
+    height: 50px;
+}
+
+.social-links a:first-child:hover{
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.social-links a:nth-of-type(2):hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    border-radius: 10px;
+}
+
+.social-links a:last-child:hover{
+    background: #0e76a8;
+    border-radius: 50%;
+}
+
+
+
+
